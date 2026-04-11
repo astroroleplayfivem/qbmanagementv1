@@ -65,5 +65,4 @@ It has been structured in a way that makes editing, expanding, and maintaining i
 I have way better scripts coning out soon! This one is completely free for you guys until i get the other ones out. 
 If you want custom themes made, please join my discrod and hit me up! 
 ## DISCORD : https://discord.gg/2PyMsdMNCE
-
-
+## CFX POST : 
