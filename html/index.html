@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="hidden">
+        <div class="overlay">
+            <div class="shell">
+                <aside class="sidebar">
+                    <div class="brand">
+                        <div class="brand-icon" id="brandIcon">??</div>
+                        <div>
+                            <div class="brand-title" id="bizName">Business</div>
+                            <div class="brand-sub" id="bizSub">Management</div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="nav-btn active" data-tab="dashboard">Dashboard</button>
+                    <button type="button" class="nav-btn" data-tab="employees">Employees</button>
+                    <button type="button" class="nav-btn" data-tab="finance">Finance</button>
+                    <button type="button" class="nav-btn" data-tab="billings">Billings</button>
+                    <button type="button" class="nav-btn" data-tab="bonuses">Bonuses</button>
+                    <button type="button" class="nav-btn" data-tab="logs">Logs</button>
+                    <button type="button" class="nav-btn" data-tab="settings">Settings</button>
+
+                    <button type="button" class="close-btn" id="closeBtn">Close</button>
+                </aside>
+
+                <main class="content">
+                    <div class="topbar">
+                        <div>
+                            <h1 id="pageTitle">Dashboard</h1>
+                            <p id="pageSubtitle">Business management overview</p>
+                        </div>
+                        <div class="balance-card">
+                            <span>Society Balance</span>
+                            <strong id="societyBalance">$0</strong>
+                        </div>
+                    </div>
+
+                    <section id="dashboard" class="tab active"></section>
+                    <section id="employees" class="tab"></section>
+                    <section id="finance" class="tab"></section>
+                    <section id="billings" class="tab"></section>
+                    <section id="bonuses" class="tab"></section>
+                    <section id="logs" class="tab"></section>
+                    <section id="settings" class="tab"></section>
+                </main>
+            </div>
+        </div>
+
+        <div id="modalLayer" class="modal-layer hidden">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Action</h3>
+                    <button type="button" class="modal-close" id="modalCloseBtn">×</button>
+                </div>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
