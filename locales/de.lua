@@ -1,0 +1,86 @@
+local Translations = {
+    headers = {
+        ['bsm'] = 'Boss-MenÃ¼ - ',
+    },
+    body = {
+        ['manage'] = 'Mitarbeiter verwalten',
+        ['managed'] = 'ÃœberprÃ¼fe deine Mitarbeiterliste',
+        ['hire'] = 'Mitarbeiter einstellen',
+        ['hired'] = 'In der NÃ¤he befindliche Zivilisten einstellen',
+        ['storage'] = 'Zugriff auf Lager',
+        ['storaged'] = 'Lager Ã¶ffnen',
+        ['outfits'] = 'Outfits',
+        ['outfitsd'] = 'Gespeicherte Outfits ansehen',
+        ['money'] = 'Geldverwaltung',
+        ['moneyd'] = 'Kontostand des Unternehmens Ã¼berprÃ¼fen',
+        ['mempl'] = 'Mitarbeiter verwalten - ',
+        ['mngpl'] = 'Verwalten ',
+        ['grade'] = 'Rang: ',
+        ['fireemp'] = 'Mitarbeiter entlassen',
+        ['hireemp'] = 'Mitarbeiter einstellen - ',
+        ['cid'] = 'BÃ¼rger-ID: ',
+        ['balance'] = 'Kontostand: $',
+        ['deposit'] = 'Einzahlen',
+        ['depositd'] = 'Geld auf das Konto einzahlen',
+        ['withdraw'] = 'Abheben',
+        ['withdrawd'] = 'Geld vom Konto abheben',
+        ['depositm'] = 'Geld einzahlen <br> VerfÃ¼gbares Guthaben: $',
+        ['withdrawm'] = 'Geld abheben <br> VerfÃ¼gbares Guthaben: $',
+        ['submit'] = 'BestÃ¤tigen',
+        ['amount'] = 'Betrag',
+        ['return'] = 'ZurÃ¼ck',
+        ['exit'] = 'ZurÃ¼ck',
+    },
+    drawtext = {
+        ['label'] = '[E] Jobverwaltung Ã¶ffnen',
+    },
+    target = {
+        ['label'] = 'Boss-MenÃ¼',
+    },
+    headersgang = {
+        ['bsm'] = 'Gang-Verwaltung - ',
+    },
+    bodygang = {
+        ['manage'] = 'Gangmitglieder verwalten',
+        ['managed'] = 'Gangmitglieder rekrutieren oder entlassen',
+        ['hire'] = 'Mitglieder rekrutieren',
+        ['hired'] = 'Gangmitglieder einstellen',
+        ['storage'] = 'Zugriff auf Lager',
+        ['storaged'] = 'Gang-Lager Ã¶ffnen',
+        ['outfits'] = 'Outfits',
+        ['outfitsd'] = 'Kleidung wechseln',
+        ['money'] = 'Geldverwaltung',
+        ['moneyd'] = 'Kontostand der Gang Ã¼berprÃ¼fen',
+        ['mempl'] = 'Gangmitglieder verwalten - ',
+        ['mngpl'] = 'Verwalten ',
+        ['grade'] = 'Rang: ',
+        ['fireemp'] = 'Entlassen',
+        ['hireemp'] = 'Gangmitglieder einstellen - ',
+        ['cid'] = 'BÃ¼rger-ID: ',
+        ['balance'] = 'Kontostand: $',
+        ['deposit'] = 'Einzahlen',
+        ['depositd'] = 'Geld auf das Konto einzahlen',
+        ['withdraw'] = 'Abheben',
+        ['withdrawd'] = 'Geld vom Konto abheben',
+        ['depositm'] = 'Geld einzahlen <br> VerfÃ¼gbares Guthaben: $',
+        ['withdrawm'] = 'Geld abheben <br> VerfÃ¼gbares Guthaben: $',
+        ['submit'] = 'BestÃ¤tigen',
+        ['amount'] = 'Betrag',
+        ['return'] = 'ZurÃ¼ck',
+        ['exit'] = 'Beenden',
+    },
+    drawtextgang = {
+        ['label'] = '[E] Gangverwaltung Ã¶ffnen',
+    },
+    targetgang = {
+        ['label'] = 'Gang-MenÃ¼',
+    }
+}
+
+if GetConvar('qb_locale', 'en') == 'de' then
+    Lang = Locale:new({
+        phrases = Translations,
+        warnOnMissing = true,
+        fallbackLang = Lang,
+    })
+end
