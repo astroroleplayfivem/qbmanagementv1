@@ -1,0 +1,86 @@
+local Translations = {
+    headers = {
+        ['bsm'] = 'Menu do Chefe - ',
+    },
+    body = {
+        ['manage'] = 'Gerir FuncionÃ¡rios',
+        ['managed'] = 'Verificar sua Lista de FuncionÃ¡rios',
+        ['hire'] = 'Contratar FuncionÃ¡rios',
+        ['hired'] = 'Contratar Civis prÃ³ximos',
+        ['storage'] = 'Acesso ao Armazenamento',
+        ['storaged'] = 'Abrir Armazenamento',
+        ['outfits'] = 'Fatos',
+        ['outfitsd'] = 'Ver Fatos Salvos',
+        ['money'] = 'GestÃ£o de Dinheiro',
+        ['moneyd'] = 'Verificar o Saldo da Empresa',
+        ['mempl'] = 'Gerir FuncionÃ¡rios - ',
+        ['mngpl'] = 'Gerir ',
+        ['grade'] = 'Cargo: ',
+        ['fireemp'] = 'Despedir FuncionÃ¡rio',
+        ['hireemp'] = 'Contratar FuncionÃ¡rios - ',
+        ['cid'] = 'NÃºmero de CidadÃ£o: ',
+        ['balance'] = 'Saldo: â‚¬',
+        ['deposit'] = 'DepÃ³sito',
+        ['depositd'] = 'Depositar Dinheiro na conta',
+        ['withdraw'] = 'Levantar',
+        ['withdrawd'] = 'Levantar Dinheiro da conta',
+        ['depositm'] = 'Depositar Dinheiro <br> Saldo DisponÃ­vel: â‚¬',
+        ['withdrawm'] = 'Levantar Dinheiro <br> Saldo DisponÃ­vel: â‚¬',
+        ['submit'] = 'Confirmar',
+        ['amount'] = 'Montante',
+        ['return'] = 'Voltar',
+        ['exit'] = 'Voltar',
+    },
+    drawtext = {
+        ['label'] = '[E] Abrir GestÃ£o ',
+    },
+    target = {
+        ['label'] = 'Menu do Chefe',
+    },
+    headersgang = {
+        ['bsm'] = 'Gerir Gang  - ',
+    },
+    bodygang = {
+        ['manage'] = 'Gerir Membros do Gang',
+        ['managed'] = 'Recrutar ou Despedir Membros do Gang',
+        ['hire'] = 'Recrutar Membros',
+        ['hired'] = 'Contratar Membros do Gang',
+        ['storage'] = 'Acesso ao Armazenamento',
+        ['storaged'] = 'Abrir Armazenamento do Gang',
+        ['outfits'] = 'Roupas',
+        ['outfitsd'] = 'Mudar de Roupa',
+        ['money'] = 'GestÃ£o de Dinheiro',
+        ['moneyd'] = 'Verificar o Saldo do Gang',
+        ['mempl'] = 'Gerir Membros do Gang - ',
+        ['mngpl'] = 'Gerir ',
+        ['grade'] = 'Grau: ',
+        ['fireemp'] = 'Despedir',
+        ['hireemp'] = 'Contratar Membros - ',
+        ['cid'] = 'ID de cidadÃ£o: ',
+        ['balance'] = 'Saldo: â‚¬',
+        ['deposit'] = 'Depositar',
+        ['depositd'] = 'Depositar dinheiro na conta',
+        ['withdraw'] = 'Levantamento',
+        ['withdrawd'] = 'Levantar dinheiro da conta',
+        ['depositm'] = 'Depositar Dinheiro <br> Saldo DisponÃ­vel: â‚¬',
+        ['withdrawm'] = 'Levantar Dinheiro <br> Saldo DisponÃ­vel: â‚¬',
+        ['submit'] = 'Confirmar',
+        ['amount'] = 'Montante',
+        ['return'] = 'Voltar',
+        ['exit'] = 'Voltar',
+    },
+    drawtextgang = {
+        ['label'] = '[E] Abrir GestÃ£o Gang',
+    },
+    targetgang = {
+        ['label'] = 'Gang Menu',
+    }
+}
+
+if GetConvar('qb_locale', 'en') == 'pt' then
+    Lang = Locale:new({
+        phrases = Translations,
+        warnOnMissing = true,
+        fallbackLang = Lang,
+    })
+end
